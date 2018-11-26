@@ -1,0 +1,79 @@
+﻿body{
+	overflow-x: hidden;
+}
+
+#back-img{
+	position: fixed;	
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
+#back-img img{
+	height: 100%;	
+	width: 100%;
+	border: 0;
+}
+
+#register{
+	margin: 25px auto;
+	padding: 25px 25px;
+	border-radius: 2%;
+	box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #0abdd7, 0 0 7px #0abdd7, 0 0 8px #0abdd7, 0 0 10px #0abdd7;
+}
+
+#register .col-md-5{
+	border-right: 1px solid #00FFFF;
+}
+
+.article h2{
+    font-size:42px;
+	color: lightgoldenrodyellow;
+	text-shadow: 0px 0px 10px white;
+}
+
+.article p{
+	font-size: 30px;
+	font-family: "华文行楷";
+	color:lightyellow;
+	text-shadow: 0px 0px 10px white;
+}
+
+.article input,.article select{
+	background: rgba(0,255,255,0.6);
+	border: 1px solid lightgoldenrodyellow;
+	color: white;
+	text-shadow: 0px 0px 10px lightgoldenrodyellow;
+	box-shadow: 0px 0px 10px lavenderblush;
+	border-radius: 10px;
+}
+
+.article input:hover{
+	background:paleturquoise;
+}
+
+.article a{
+	color: white;
+	font-size: 28px;
+	font-family: "华文行楷";
+	text-shadow: 0px 0px 15px deepskyblue,0px 0px 15px deepskyblue,0px 0px 15px deepskyblue,0px 0px 15px deepskyblue;
+}
+
+.Agreement h2{
+	font-size: 60px;
+	font-family:"华文彩云";
+	color:lemonchiffon;
+	padding:0 0 0 30px;
+	margin:0 auto;
+	text-shadow: 0px 0px 15px cyan;
+	}
+
+.Agreement p{
+	font-family: "华文行楷";
+	font-size: 36px;
+	color:lightcyan;
+	margin-left:10px;
+	text-shadow: 0px 0px 10px darkorange;
+}

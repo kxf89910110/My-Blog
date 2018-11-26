@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	
+	<body>
+		
+		<section id="back-img">
+		      <img src="img/reg back.jpg">
+		</section>
+		
+		<div id="register" class="container">
+			<div class="row">
+				<div class="col-md-5 col-xs-3">
+					<section class="article">
+						<h2 class="message register">Enter registration information here</h2>
+				        <form name="registerform" id="registerform" action="wp-login.php?action=register" method="post" novalidate="novalidate">
+				            <p> <label for="user_login">Username<br />
+				                <input type="text" name="user_login" id="user_login" class="input" value="" size="20" />
+				            </label> </p>
+				            <p> <label for="user_email">E-mail<br />
+				                <input type="email" name="user_email" id="user_email" class="input" value="" size="25" />
+				            </label> </p>
+				            <style type="text/css">
+				            <!--#user_role {
+				                    padding: 2px;
+				                    -moz-border-radius: 4px 4px 4px 4px;
+				                    border-style: solid;
+				                    border-width: 1px;
+				                    line-height: 15px;
+				                }
+				                #user_role option {
+				                    padding: 2px;
+				                }-->
+				            </style>
+				
+				            <p> <label for="user_nick">Nickname<br/>
+				                 <input id="user_nick" class="input" type="text" size="25" value="" name="user_nick" />
+				            </label></p>
+				            <p> <label for="user_pwd1">Password(At least 6 digits)<br/>
+				                <input id="user_pwd1" class="input" type="password" size="25" value="" name="user_pass" />
+				            </label></p>
+				            <p> <label for="user_pwd2">Repeat Password<br/>
+				                 <input id="user_pwd2" class="input" type="password" size="25" value="" name="user_pass2" />
+				            </label></p>
+				            <p style="margin:0 0 10px;"> <label>User ID:
+				                <select name="user_role" id="user_role">
+				                    <option value="subscriber" >Subscriber</option>
+				                    <option value="subscriber" >Announcer</option>
+				                    <option value="subscriber" >Investor</option>
+				                    <option value="subscriber" >Helper</option>
+				                    <option value="subscriber" >Contributor</option>
+				                </select>
+				            </label> <br /></p>
+				            <p> <label for="CAPTCHA">Verification code:<br />
+				                 <input id="CAPTCHA" style="width:110px;*float:left;" class="input" type="text" size="10" value="" name="captcha_code" /> Can't see?
+				                <a href="javascript:void(0)" onclick="document.getElementById('captcha_img').src='php/captcha.php'+Math.random();document.getElementById('CAPTCHA').focus();return false;">Click to replace</a>
+				            </label></p>
+				            <p> <label>
+				            <img id="captcha_img" src="php/captcha.php" title="Can't see?Click to replace" alt="Can't see?Click to replace" onclick="document.getElementById('captcha_img').src='php/captcha.php'+Math.random();document.getElementById('CAPTCHA').focus();return false;" />
+				            </label></p>
+				            <p id="reg_passmail">Registration confirmation will be sent to you.</p>
+				            <br class="clear" />
+				            <input type="hidden" name="redirect_to" value="" />
+				            <p class="submit">
+				            <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Registered" />
+				            </p>
+				        </form>
+				        <p id="nav">
+				            <a href="wp-login.php">Login</a> |<a href="wp-login.php?action=lostpassword">Forget password?</a>
+				        </p>
+				        <p id="backtoblog">
+				            <a href="index.html">&larr; Return to my blog</a>
+				        </p>
+					</section>
+					
+					<footer>
+						
+					</footer>
+				</div>
+				
+				<div class="col-md-6 Agreement">
+					<h2>Agreement</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium delectus fugiat harum porro ratione odit similique expedita nisi perspiciatis aut reiciendis qui quas eos ipsa unde non quibusdam saepe commodi?</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quo sapiente quam eaque odio iusto ut necessitatibus. Iste possimus itaque iusto autem ipsum cumque nobis nihil vel ex perspiciatis asperiores.</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquid deserunt obcaecati at non quia molestiae mollitia possimus iusto eius esse illum nam ullam minima voluptatibus unde reprehenderit perspiciatis totam.</p>
+				</div>
+			</div>
+		</div>
+
+	    <script type="text/javascript">
+	        try{
+	            document.getElementById('user_login').focus();
+	        }
+	        catch(e){} if(typeof wpOnload=='function')wpOnload();
+	    </script>
+	    <div class="clear"></div>
+	</body>
+</html>

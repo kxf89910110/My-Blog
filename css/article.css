@@ -1,0 +1,17 @@
+.Note-left .panel{
+    background: rgba(0,0,0,0.8);
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #0abdd7, 0 0 7px #0abdd7, 0 0 8px #0abdd7, 0 0 10px #0abdd7;
+}
+
+.Note-left .panel:hover{
+    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 18px #fff, 0 0 12px #0abdd7, 0 0 14px #0abdd7, 0 0 16px #0abdd7, 0 0 20px #0abdd7;
+}
+
+.Note-left .panel-heading{
+    font-family: "微软雅黑";
+    color: lightgoldenrodyellow;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #0abdd7, 0 0 7px #0abdd7, 0 0 8px #0abdd7, 0 0 10px #0abdd7;
+    border-bottom-color: #0ABDD7;
+}
